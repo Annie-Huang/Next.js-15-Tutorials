@@ -1,0 +1,6 @@
+Next.js 15 Tutorial - Beginner to Advanced (https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY)
+
+https://github.com/gopinav/Next.js-15-Tutorials
+https://github.com/Annie-Huang/Next.js-15-Tutorials
+
+---------------------------------------------------------------
