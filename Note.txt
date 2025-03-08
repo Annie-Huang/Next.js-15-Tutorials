@@ -21,7 +21,7 @@ Server side component vs client side component, read the image description, it i
 
 PS C:\react\Next.js-15-Tutorials\rendering-demo> npm run dev
 PS C:\react\Next.js-15-Tutorials\rendering-demo> npm run build  (delete .next folder before you do this)
-
+PS C:\react\Next.js-15-Tutorials\rendering-demo> npm i server-only
 
 http://localhost:3000/about
 http://localhost:3000/dashboard
