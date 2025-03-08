@@ -26,6 +26,8 @@ PS C:\react\Next.js-15-Tutorials\rendering-demo> npm run build  (delete .next fo
 http://localhost:3000/about
 http://localhost:3000/dashboard
 http://localhost:3000/products/1
+http://localhost:3000/server-route
+http://localhost:3000/client-route
 
 
 Output of npm run build - static rendering:
