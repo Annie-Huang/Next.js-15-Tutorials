@@ -25,6 +25,7 @@ PS C:\react\Next.js-15-Tutorials\rendering-demo> npm run build  (delete .next fo
 
 http://localhost:3000/about
 http://localhost:3000/dashboard
+http://localhost:3000/products/1
 
 
 Output of npm run build - static rendering:
@@ -63,3 +64,26 @@ Route (app)                              Size     First Load JS
 
 ○  (Static)   prerendered as static content
 ƒ  (Dynamic)  server-rendered on demand
+
+
+Output of npm run build - static rendering on /products page but dynamic rendering on /products/[id] page:
+=============================================================================================================
+No generateStaticParams:
+http://localhost:3000/products/1
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    5.52 kB         123 kB
+├ ○ /_not-found                          978 B           118 kB
+├ ƒ /about                               139 B           117 kB
+├ ○ /dashboard                           371 B           118 kB
+├ ○ /products                            170 B           117 kB
+└ ƒ /products/[id]                       139 B           117 kB
++ First Load JS shared by all            117 kB
+  ├ chunks/4bd1b696-a36ea8e456db238f.js  53 kB
+  ├ chunks/587-6fd2573952aa57fe.js       62.3 kB
+  └ other shared chunks (total)          1.95 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
