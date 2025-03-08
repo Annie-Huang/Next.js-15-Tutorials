@@ -20,7 +20,24 @@ Creating a new Next.js app in C:\react\Next.js-15-Tutorials\rendering-demo.
 Server side component vs client side component, read the image description, it is very clear.
 
 PS C:\react\Next.js-15-Tutorials\rendering-demo> npm run dev
+PS C:\react\Next.js-15-Tutorials\rendering-demo> npm run build  (delete .next folder before you do this)
+
 
 http://localhost:3000/about
 http://localhost:3000/dashboard
 
+
+Output of npm run build:
+================================
+Route (app)                              Size     First Load JS
+┌ ○ /                                    5.52 kB         123 kB         << 117kB + 5.52kB = 123kB   on server side
+├ ○ /_not-found                          978 B           118 kB         << 117kB + 978B = 118kB     on server side
+├ ○ /about                               137 B           117 kB         ...
+└ ○ /dashboard                           371 B           118 kB
++ First Load JS shared by all            117 kB
+  ├ chunks/4bd1b696-a36ea8e456db238f.js  53 kB
+  ├ chunks/587-6fd2573952aa57fe.js       62.3 kB
+  └ other shared chunks (total)          1.95 kB
+
+
+○  (Static)  prerendered as static content
