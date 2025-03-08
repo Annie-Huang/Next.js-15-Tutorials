@@ -69,7 +69,7 @@ Route (app)                              Size     First Load JS
 Output of npm run build - static rendering on /products page but dynamic rendering on /products/[id] page:
 =============================================================================================================
 No generateStaticParams:
-http://localhost:3000/products/1
+http://localhost:3000/products/1    <--- you can see the timestamp changes. because it's dynamic.
 
 Route (app)                              Size     First Load JS
 ┌ ○ /                                    5.52 kB         123 kB
@@ -87,3 +87,28 @@ Route (app)                              Size     First Load JS
 ○  (Static)   prerendered as static content
 ƒ  (Dynamic)  server-rendered on demand
 
+
+Output of npm run build - static rendering on /products page but dynamic rendering on /products/[id] page:
+=============================================================================================================
+With generateStaticParams:
+http://localhost:3000/products/1    <--- you can see the timestamp does not changed. because it's pre-rendered.
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    5.52 kB         123 kB
+├ ○ /_not-found                          978 B           118 kB
+├ ƒ /about                               139 B           117 kB
+├ ○ /dashboard                           371 B           118 kB
+├ ○ /products                            170 B           117 kB
+└ ● /products/[id]                       139 B           117 kB
+    ├ /products/1
+    ├ /products/2
+    └ /products/3
++ First Load JS shared by all            117 kB
+  ├ chunks/4bd1b696-a36ea8e456db238f.js  53 kB
+  ├ chunks/587-6fd2573952aa57fe.js       62.3 kB
+  └ other shared chunks (total)          1.95 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
