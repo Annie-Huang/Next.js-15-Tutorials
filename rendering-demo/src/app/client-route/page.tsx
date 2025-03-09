@@ -18,16 +18,16 @@ export default function ClientRoutePage() {
     <div className='image-slider-container'>
       <Slider {...settings}>
         <div>
-          <img src='http://placekitten.com/g/400/200' />
+          <img src='https://picsum.photos/400/200' />
         </div>
         <div>
-          <img src='http://placekitten.com/g/400/200' />
+          <img src='https://picsum.photos/400/200' />
         </div>
         <div>
-          <img src='http://placekitten.com/g/400/200' />
+          <img src='https://picsum.photos/400/200' />
         </div>
         <div>
-          <img src='http://placekitten.com/g/400/200' />
+          <img src='https://picsum.photos/400/200' />
         </div>
       </Slider>
     </div>
