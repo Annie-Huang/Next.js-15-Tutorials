@@ -6,9 +6,12 @@ import { serverSideFunction } from '@/utils/server-utils';
 // import 'slick-carousel/slick/slick-theme.css';
 
 import { ImageSlider } from '@/components/ImageSlider';
+import { clientSideFunction } from '@/utils/client-utils';
 
 export default function ServerRoutePage() {
   const result = serverSideFunction();
+  const clientResult = clientSideFunction();
+
   // return <h1>Server Route {result}</h1>;
 
   // const settings = {
@@ -36,7 +39,9 @@ export default function ServerRoutePage() {
   // Solution is to use a custom component to wrap the 3rd party lib that use client component only.
   return (
     <>
-      <h1>Server Route {result}</h1>
+      <h1>
+        Server Route {result} {clientResult}
+      </h1>
       <ImageSlider />
     </>
   );
