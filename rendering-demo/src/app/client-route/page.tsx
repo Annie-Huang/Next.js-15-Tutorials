@@ -8,6 +8,7 @@ import { serverSideFunction } from '@/utils/server-utils';
 // import 'slick-carousel/slick/slick-theme.css';
 
 import { useTheme } from '@/components/theme-provider';
+import { clientSideFunction } from '@/utils/client-utils';
 
 export default function ClientRoutePage() {
   // const result = serverSideFunction();
@@ -35,9 +36,12 @@ export default function ClientRoutePage() {
   // );
 
   const theme = useTheme();
+  const result = clientSideFunction();
+
   return (
     <div style={{ color: theme.colors.primary }}>
       <h1>Client route page</h1>
+      <p>{result}</p>
     </div>
   );
 }
