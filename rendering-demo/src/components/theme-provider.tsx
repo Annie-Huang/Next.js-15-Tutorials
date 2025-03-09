@@ -18,11 +18,14 @@ const defaultTheme: Theme = {
 const ThemeContext = createContext<Theme>(defaultTheme);
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <ThemeContext.Provider value={defaultTheme}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  // return (
+  //   <ThemeContext.Provider value={defaultTheme}>
+  //     {children}
+  //   </ThemeContext.Provider>
+  // );
+
+  // React 19 can just use ThemeContext
+  return <ThemeContext value={defaultTheme}>{children}</ThemeContext>;
 };
 
 export const useTheme = () => useContext(ThemeContext);
