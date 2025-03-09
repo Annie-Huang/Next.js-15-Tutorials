@@ -10,7 +10,9 @@ import { clientSideFunction } from '@/utils/client-utils';
 
 export default function ServerRoutePage() {
   const result = serverSideFunction();
-  const clientResult = clientSideFunction();
+
+  // You cannot use client-only code into server component.
+  // const clientResult = clientSideFunction();
 
   // return <h1>Server Route {result}</h1>;
 
@@ -40,7 +42,8 @@ export default function ServerRoutePage() {
   return (
     <>
       <h1>
-        Server Route {result} {clientResult}
+        {/*Server Route {result} {clientResult}*/}
+        Server Route {result}
       </h1>
       <ImageSlider />
     </>
