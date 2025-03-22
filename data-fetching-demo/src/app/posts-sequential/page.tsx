@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Author } from "./author";
 
 type Post = {
   userId: number;
@@ -23,6 +24,7 @@ export default async function PostsPage() {
               {post.title}
             </h2>
             <p className="text-gray-600 mb-4 leading-relaxed">{post.body}</p>
+            <Author userId={post.userId} />
           </div>
         ))}
       </div>
