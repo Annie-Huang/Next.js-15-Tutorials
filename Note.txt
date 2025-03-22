@@ -144,3 +144,10 @@ Ok to proceed? (y) y
 √ Would you like to customize the import alias (`@/*` by default)? ... Yes
 √ What import alias would you like configured? ... @/*
 Creating a new Next.js app in C:\react\Next.js-15-Tutorials\data-fetching-demo.
+
+
+PS C:\react\Next.js-15-Tutorials\data-fetching-demo> npm run dev
+
+
+http://localhost:3000/users-client
+
