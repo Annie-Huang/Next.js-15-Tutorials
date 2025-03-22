@@ -151,4 +151,5 @@ PS C:\react\Next.js-15-Tutorials\data-fetching-demo> npm run dev
 
 http://localhost:3000/users-client
 http://localhost:3000/users-server
+http://localhost:3000/posts-sequential
 
