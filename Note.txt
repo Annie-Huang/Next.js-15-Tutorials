@@ -130,3 +130,17 @@ Route (app)                              Size     First Load JS
 ################################################################################################################################
 ################################################################################################################################
 
+PS C:\react\Next.js-15-Tutorials> npx create-next-app@latest data-fetching-demo
+Need to install the following packages:
+create-next-app@15.2.3
+Ok to proceed? (y) y
+
+√ Would you like to use TypeScript? ... Yes
+√ Would you like to use ESLint? ... Yes
+√ Would you like to use Tailwind CSS? ... Yes
+√ Would you like your code inside a `src/` directory? ... Yes
+√ Would you like to use App Router? (recommended) ... Yes
+√ Would you like to use Turbopack for `next dev`? ... No
+√ Would you like to customize the import alias (`@/*` by default)? ... Yes
+√ What import alias would you like configured? ... @/*
+Creating a new Next.js app in C:\react\Next.js-15-Tutorials\data-fetching-demo.
