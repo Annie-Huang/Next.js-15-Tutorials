@@ -157,4 +157,5 @@ http://localhost:3000/users-server
 http://localhost:3000/posts-sequential      <-- sequential fetching
 http://localhost:3000/user-parallel/1       <-- parallel fetching. using Promise.all
 http://localhost:3000/products-db
-http://localhost:3000/react-form
+http://localhost:3000/react-form            <-- normal client component to make a mutation call.
+http://localhost:3000/products-db-create    <-- server action mutation submission.
