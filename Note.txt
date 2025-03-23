@@ -148,6 +148,7 @@ Creating a new Next.js app in C:\react\Next.js-15-Tutorials\data-fetching-demo.
 
 PS C:\react\Next.js-15-Tutorials\data-fetching-demo> npm run dev
 PS C:\react\Next.js-15-Tutorials\data-fetching-demo> npm install prisma -D
+PS C:\react\Next.js-15-Tutorials\data-fetching-demo> npx prisma init --datasource-provider sqlite
 
 http://localhost:3000/users-client
 http://localhost:3000/users-server
