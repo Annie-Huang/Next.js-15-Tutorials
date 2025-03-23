@@ -1,7 +1,19 @@
+import { addProduct } from "@/prisma-db";
+
 export default function AddProductPage() {
+  async function createProduct(formData: FormData) {
+    "use server";
+
+    const title = formData.get("title") as string;
+    const price = formData.get("price") as string;
+    const description = formData.get("description") as string;
+
+    await addProduct(title, parseInt(price), description);
+  }
+
   // Copy the form from react-form\page.tsx into here initially
   return (
-    <form className="p-4 space-y-4 max-w-96">
+    <form action={createProduct} className="p-4 space-y-4 max-w-96">
       <div>
         <label className="text-white">
           Title
