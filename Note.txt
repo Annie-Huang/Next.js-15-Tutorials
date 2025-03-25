@@ -159,3 +159,4 @@ http://localhost:3000/user-parallel/1       <-- parallel fetching. using Promise
 http://localhost:3000/products-db
 http://localhost:3000/react-form            <-- normal client component to make a mutation call.
 http://localhost:3000/products-db-create    <-- server action mutation submission.
+                                                ("NOTE14 - Server Actions benefits.jpg")
