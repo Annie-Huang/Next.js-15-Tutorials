@@ -1,4 +1,5 @@
 import { addProduct } from "@/prisma-db";
+import { redirect } from "next/navigation";
 
 export default function AddProductPage() {
   async function createProduct(formData: FormData) {
@@ -9,6 +10,7 @@ export default function AddProductPage() {
     const description = formData.get("description") as string;
 
     await addProduct(title, parseInt(price), description);
+    redirect("/products-db");
   }
 
   // Copy the form from react-form\page.tsx into here initially
@@ -19,7 +21,7 @@ export default function AddProductPage() {
           Title
           <input
             type="text"
-            className="block w-full p-2 text-black border rounded"
+            className="block w-full p-2 text-black border rounded bg-white"
             name="title"
           />
         </label>
@@ -29,7 +31,7 @@ export default function AddProductPage() {
           Price
           <input
             type="number"
-            className="block w-full p-2 text-black border rounded"
+            className="block w-full p-2 text-black border rounded bg-white"
             name="price"
           />
         </label>
@@ -38,7 +40,7 @@ export default function AddProductPage() {
         <label className="text-white">
           Description
           <textarea
-            className="block w-full p-2 text-black border rounded"
+            className="block w-full p-2 text-black border rounded bg-white"
             name="description"
           />
         </label>
