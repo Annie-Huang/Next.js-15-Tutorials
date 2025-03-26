@@ -64,6 +64,9 @@ export default function AddProductPage() {
             name="title"
           />
         </label>
+        {state.errors.title && (
+          <p className="text-red-500">{state.errors.title}</p>
+        )}
       </div>
       <div>
         <label className="text-white">
@@ -74,6 +77,9 @@ export default function AddProductPage() {
             name="price"
           />
         </label>
+        {state.errors.price && (
+          <p className="text-red-500">{state.errors.price}</p>
+        )}
       </div>
       <div>
         <label className="text-white">
@@ -83,6 +89,9 @@ export default function AddProductPage() {
             name="description"
           />
         </label>
+        {state.errors.description && (
+          <p className="text-red-500">{state.errors.description}</p>
+        )}
       </div>
       {/*<button*/}
       {/*  type="submit"*/}
