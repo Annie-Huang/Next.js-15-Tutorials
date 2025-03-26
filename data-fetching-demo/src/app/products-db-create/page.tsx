@@ -1,5 +1,6 @@
 import { addProduct } from "@/prisma-db";
 import { redirect } from "next/navigation";
+import { Submit } from "@/components/submit";
 
 export default function AddProductPage() {
   async function createProduct(formData: FormData) {
@@ -45,12 +46,15 @@ export default function AddProductPage() {
           />
         </label>
       </div>
-      <button
-        type="submit"
-        className="block w-full p-2 text-white bg-blue-500 rounded disabled:bg-gray-500"
-      >
-        Add Product
-      </button>
+      {/*<button*/}
+      {/*  type="submit"*/}
+      {/*  className="block w-full p-2 text-white bg-blue-500 rounded disabled:bg-gray-500"*/}
+      {/*>*/}
+      {/*  Add Product*/}
+      {/*</button>*/}
+
+      {/* The reason we separate the component is because useFormStatus can only be used in client component and we don't want to make this whole component a client component. */}
+      <Submit />
     </form>
   );
 }
