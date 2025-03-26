@@ -1,3 +1,5 @@
+"use client";
+
 import { addProduct } from "@/prisma-db";
 import { redirect } from "next/navigation";
 import { Submit } from "@/components/submit";
