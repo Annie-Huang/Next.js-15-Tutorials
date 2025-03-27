@@ -4,7 +4,13 @@ import { Submit } from "@/components/submit";
 import { useActionState } from "react";
 import { createProduct, FormState } from "@/actions/products";
 
-export default function EditProductPage() {
+export default async function EditProductPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+
   const initialState: FormState = {
     errors: {},
   };

@@ -160,3 +160,4 @@ http://localhost:3000/products-db
 http://localhost:3000/react-form            <-- normal client component to make a mutation call.
 http://localhost:3000/products-db-create    <-- server action mutation submission.
                                                 ("NOTE14 - Server Actions benefits.jpg")
+http://localhost:3000/products-db/1
