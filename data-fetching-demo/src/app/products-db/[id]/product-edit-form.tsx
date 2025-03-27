@@ -2,7 +2,7 @@
 
 import { Submit } from "@/components/submit";
 import { useActionState } from "react";
-import { createProduct, FormState } from "@/actions/products";
+import { editProduct, FormState } from "@/actions/products";
 import type { Product } from "@/app/products-db/page";
 
 export default function EditProductForm({ product }: { product: Product }) {
@@ -10,8 +10,12 @@ export default function EditProductForm({ product }: { product: Product }) {
     errors: {},
   };
 
+  // I actually prefer the <input type='hidden' name='id' value={product.id} /> in the template as I don't quite under the .bind function.
+  const editProductWithId = editProduct.bind(null, product.id);
+
   const [state, formAction, isPending] = useActionState(
-    createProduct,
+    // editProduct,
+    editProductWithId,
     initialState,
   );
 
