@@ -10,5 +10,5 @@ export default async function EditProductPage({
   const { id } = await params;
   const product = await getProduct(parseInt(id));
 
-  return <EditProductForm />;
+  return <EditProductForm product={product} />;
 }
