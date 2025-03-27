@@ -4,7 +4,7 @@ import { Submit } from "@/components/submit";
 import { useActionState } from "react";
 import { createProduct, FormState } from "@/actions/products";
 
-export default function AddProductPage() {
+export default function EditProductPage() {
   const initialState: FormState = {
     errors: {},
   };
