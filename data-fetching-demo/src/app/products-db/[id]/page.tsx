@@ -3,13 +3,16 @@
 import { Submit } from "@/components/submit";
 import { useActionState } from "react";
 import { createProduct, FormState } from "@/actions/products";
+import { getProduct } from "@/prisma-db";
 
 export default async function EditProductPage({
   params,
 }: {
   params: Promise<{ id: string }>;
 }) {
+  // These 2 is for server component, cannot use 'use client'
   const { id } = await params;
+  const product = await getProduct(parseInt(id));
 
   const initialState: FormState = {
     errors: {},
