@@ -26,6 +26,7 @@ export default function EditProductForm({ product }: { product: Product }) {
             type="text"
             className="block w-full p-2 text-black border rounded bg-white"
             name="title"
+            defaultValue={product.title}
           />
         </label>
         {state.errors.title && (
@@ -39,6 +40,7 @@ export default function EditProductForm({ product }: { product: Product }) {
             type="number"
             className="block w-full p-2 text-black border rounded bg-white"
             name="price"
+            defaultValue={product.price}
           />
         </label>
         {state.errors.price && (
@@ -51,19 +53,20 @@ export default function EditProductForm({ product }: { product: Product }) {
           <textarea
             className="block w-full p-2 text-black border rounded bg-white"
             name="description"
+            defaultValue={product.description ?? ""}
           />
         </label>
         {state.errors.description && (
           <p className="text-red-500">{state.errors.description}</p>
         )}
       </div>
-      {/*<button*/}
-      {/*  type="submit"*/}
-      {/*  className="block w-full p-2 text-white bg-blue-500 rounded disabled:bg-gray-500"*/}
-      {/*  disabled={isPending}*/}
-      {/*>*/}
-      {/*  Add Product*/}
-      {/*</button>*/}
+      {/*      <button
+        type="submit"
+        className="block w-full p-2 text-white bg-blue-500 rounded disabled:bg-gray-500"
+        disabled={isPending}
+      >
+        Add Product
+      </button>*/}
 
       {/* The reason we separate the component is because useFormStatus can only be used in client component and we don't want to make this whole component a client component. */}
       <Submit />
