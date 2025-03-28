@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { Submit } from "@/components/submit";
-import { useActionState } from "react";
-import { editProduct, FormState } from "@/actions/products";
-import type { Product } from "@/app/products-db/page";
+import { Submit } from '@/components/submit';
+import { useActionState } from 'react';
+import { editProduct, FormState } from '@/actions/products';
+import type { Product } from '@/app/products-db/page';
 
 export default function EditProductForm({ product }: { product: Product }) {
   const initialState: FormState = {
@@ -22,46 +22,46 @@ export default function EditProductForm({ product }: { product: Product }) {
   // Copy the form from react-form\page.tsx into here initially
   return (
     // <form action={createProduct} className="p-4 space-y-4 max-w-96">
-    <form action={formAction} className="p-4 space-y-4 max-w-96">
+    <form action={formAction} className='p-4 space-y-4 max-w-96'>
       <div>
-        <label className="text-white">
+        <label className='text-white'>
           Title
           <input
-            type="text"
-            className="block w-full p-2 text-black border rounded bg-white"
-            name="title"
+            type='text'
+            className='block w-full p-2 text-black border rounded bg-white'
+            name='title'
             defaultValue={product.title}
           />
         </label>
         {state.errors.title && (
-          <p className="text-red-500">{state.errors.title}</p>
+          <p className='text-red-500'>{state.errors.title}</p>
         )}
       </div>
       <div>
-        <label className="text-white">
+        <label className='text-white'>
           Price
           <input
-            type="number"
-            className="block w-full p-2 text-black border rounded bg-white"
-            name="price"
+            type='number'
+            className='block w-full p-2 text-black border rounded bg-white'
+            name='price'
             defaultValue={product.price}
           />
         </label>
         {state.errors.price && (
-          <p className="text-red-500">{state.errors.price}</p>
+          <p className='text-red-500'>{state.errors.price}</p>
         )}
       </div>
       <div>
-        <label className="text-white">
+        <label className='text-white'>
           Description
           <textarea
-            className="block w-full p-2 text-black border rounded bg-white"
-            name="description"
-            defaultValue={product.description ?? ""}
+            className='block w-full p-2 text-black border rounded bg-white'
+            name='description'
+            defaultValue={product.description ?? ''}
           />
         </label>
         {state.errors.description && (
-          <p className="text-red-500">{state.errors.description}</p>
+          <p className='text-red-500'>{state.errors.description}</p>
         )}
       </div>
       {/*      <button

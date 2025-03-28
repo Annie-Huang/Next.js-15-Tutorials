@@ -11,9 +11,9 @@ export async function Author({ userId }: { userId: number }) {
   const user: Author = await response.json();
 
   return (
-    <div className="text-sm text-gray-500">
-      Written by:{" "}
-      <span className="font-semibold text-gray-700 hover:text-gray-900 transition-colors">
+    <div className='text-sm text-gray-500'>
+      Written by:{' '}
+      <span className='font-semibold text-gray-700 hover:text-gray-900 transition-colors'>
         {user.name}
       </span>
     </div>

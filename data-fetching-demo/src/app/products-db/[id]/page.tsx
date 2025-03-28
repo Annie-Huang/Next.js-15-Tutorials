@@ -1,7 +1,7 @@
-import { getProduct } from "@/prisma-db";
-import EditProductForm from "./product-edit-form";
-import type { Product } from "@/app/products-db/page";
-import { notFound } from "next/navigation";
+import { getProduct } from '@/prisma-db';
+import EditProductForm from './product-edit-form';
+import type { Product } from '@/app/products-db/page';
+import { notFound } from 'next/navigation';
 
 export default async function EditProductPage({
   params,
