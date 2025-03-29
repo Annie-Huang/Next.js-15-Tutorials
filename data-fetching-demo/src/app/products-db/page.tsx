@@ -1,6 +1,7 @@
 import { getProducts } from '@/prisma-db';
 import Link from 'next/link';
 import { removeProduct } from '@/actions/products';
+import { useOptimistic } from 'react';
 
 export type Product = {
   id: number;
@@ -16,6 +17,14 @@ export default async function ProductsPrismaDBPage({
 }) {
   const { query } = await searchParams;
   const products: Product[] = await getProducts(query);
+
+  // https://react.dev/reference/react/useOptimistic
+  const [optimisticProducts, setOptimisticProducts] = useOptimistic(
+    products,
+    (currentProducts, productId) => {
+      return currentProducts.filter((product) => product.id !== productId);
+    },
+  );
 
   return (
     <ul className='space-y-4 p-4'>
