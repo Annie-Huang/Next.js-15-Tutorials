@@ -1,6 +1,12 @@
 import Form from 'next/form';
 
 export const Search = () => {
+  // Form component
+  // 1. When the Form component becomes visible, it prefetch the loading UI associated with '/products-db' route
+  // 2. When a user submits the search, it instantly navigates to the products page client-side and the form data gets turned into URL params
+  //    E.g. entering 'product 3' will change url into http://localhost:3000/products-db?query=product+3
+  // 3. it'll show the loading state while the search results are being fetched.
+  // 4. once the data is ready, the results are displayed in the UI
   return (
     <Form action='/products-db' className='flex gap-2'>
       <input
