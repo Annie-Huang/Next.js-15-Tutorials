@@ -1,4 +1,5 @@
-import { getProducts } from '@/prisma-db';
+'use client';
+
 import Link from 'next/link';
 import { removeProduct } from '@/actions/products';
 import { useOptimistic } from 'react';
@@ -10,14 +11,7 @@ export type Product = {
   description: string | null;
 };
 
-export default async function ProductsPrismaDBPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ query?: string }>;
-}) {
-  const { query } = await searchParams;
-  const products: Product[] = await getProducts(query);
-
+export function ProductDetail({ products }: { products: Product[] }) {
   // https://react.dev/reference/react/useOptimistic
   // useOptimistic is a React Hook that lets you show a different state while an async action is underway.
   // It accepts some state as an argument and returns a copy of that state that can be different during the duration of an async action such as a network request.
