@@ -161,6 +161,10 @@ http://localhost:3000/react-form            <-- normal client component to make 
 http://localhost:3000/products-db-create    <-- server action mutation submission.
                                                 ("NOTE14 - Server Actions benefits.jpg")
 http://localhost:3000/products-db/1
+http://localhost:3000
+http://localhost:3000/products-db?query=product+3       <-- after enter 'product 3' in the <input> component in home page.
+
+
 
 The current repo is how I following the tutorial and create the code along side. Which is different from the version in the author github.
 Not sure why the author making a lot of editing (mainly sub split files) in his repo. But if you need to revisit this as template for future project, make sure you compare both repos

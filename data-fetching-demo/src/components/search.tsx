@@ -1,11 +1,11 @@
 import Form from 'next/form';
 
-export default function Page() {
+export const Search = () => {
   return (
     <Form action='/products-db' className='flex gap-2'>
       <input
         name='query'
-        className='flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black'
+        className='flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black bg-white'
         placeholder='Search products'
       />
       <button
@@ -16,4 +16,4 @@ export default function Page() {
       </button>
     </Form>
   );
-}
+};
