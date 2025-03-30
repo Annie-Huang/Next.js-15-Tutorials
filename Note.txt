@@ -245,3 +245,4 @@ The only want to achieve this is to not have page.tsx and layout.tsx in the root
 Routing Metadata
 http://localhost:3000
 http://localhost:3000/about
+http://localhost:3000/products/1    <-- generate metadata from params info.
