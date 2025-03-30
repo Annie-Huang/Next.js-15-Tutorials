@@ -246,3 +246,4 @@ Routing Metadata
 http://localhost:3000
 http://localhost:3000/about
 http://localhost:3000/products/1    <-- generate metadata from params info. Got scenario that we need to make an api call to get fetch further info for metadata as well.
+                                        Keep in mind you can only use metadata object or generateMetadata inside the same file, cannot use them both together.

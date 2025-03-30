@@ -4,6 +4,8 @@ type Props = {
   params: Promise<{ productId: string }>;
 };
 
+// Keep in mind you can only use metadata object or generateMetadata inside the same file, cannot use them both together.
+// export const metadata = {...};
 export const generateMetadata = async ({
   params,
 }: Props): Promise<Metadata> => {
