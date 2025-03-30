@@ -212,3 +212,5 @@ http://localhost:3000/docs                      <-- docs/[[...slug]], if you don
 http://localhost:3000/docs/feature1
 http://localhost:3000/docs/feature1/concept1
 http://localhost:3000/docs/feature1/concept1/example1
+
+http://localhost:3000/billing      <-- show no-found.tsx
