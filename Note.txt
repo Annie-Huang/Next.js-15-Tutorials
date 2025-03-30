@@ -201,5 +201,5 @@ http://localhost:3000/blog/first
 http://localhost:3000/blog/second
 
 http://localhost:3000/products
-http://localhost:3000/products/1
+http://localhost:3000/products/1    <-- with the route of products/[productId], show the params.productId in the template
 http://localhost:3000/products/2
