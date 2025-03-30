@@ -8,8 +8,16 @@ export const generateMetadata = async ({
   params,
 }: Props): Promise<Metadata> => {
   const id = (await params).productId;
+
+  // Let's mirror scenario that we need to make an api call to get fetch further info for metadata:
+  const title = await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`iPhone ${id}`);
+    }, 100);
+  });
   return {
-    title: `Product - ${id}`,
+    // title: `Product - ${id}`,
+    title: `Product - ${title}`,
   };
 };
 
