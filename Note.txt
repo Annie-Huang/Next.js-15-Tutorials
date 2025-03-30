@@ -227,3 +227,17 @@ Layout:
 http://localhost:3000
 http://localhost:3000/products
 http://localhost:3000/products/1                <-- a different layout on top of the root layout
+
+Multiple Root Layout:
+The only want to achieve this is to not have page.tsx and layout.tsx in the root folder, shift it to one of the group route folder, e.g.
+  app/
+    (auth)/
+      login/
+      register/
+        page.tsx        <-- http://localhost:3000/register will use the layout under (auth). Keep in mind that you cannot have page.tsx just under (auth). otherwise nextjs will confuse which root page to use for http://localhost:3000
+      layout.tsx        <-- can only have layout.tsx, not page.tsx just underneath (auth)
+    (marketing)/
+      customers/
+      revenue/
+      layout.tsx
+      page.tsx          <-- http://localhost:3000 will use this and this layout
