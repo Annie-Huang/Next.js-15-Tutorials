@@ -243,8 +243,9 @@ The only want to achieve this is to not have page.tsx and layout.tsx in the root
       page.tsx          <-- http://localhost:3000 will use this and this layout
 
 Routing Metadata
-http://localhost:3000               <-- Default one, specified in app/layout.tsx.
+http://localhost:3000               <-- Default one, specified in app/layout.tsx. Got the template
 http://localhost:3000/about
 http://localhost:3000/products/1    <-- generate metadata from params info. Got scenario that we need to make an api call to get fetch further info for metadata as well.
                                         Keep in mind you can only use metadata object or generateMetadata inside the same file, cannot use them both together.
 http://localhost:3000/counter       <-- metadata object cannot use in client component, only on server component.
+http://localhost:3000/blog          <-- how to use the template defined in the root level.
