@@ -199,3 +199,7 @@ Nested route:
 http://localhost:3000/blog
 http://localhost:3000/blog/first
 http://localhost:3000/blog/second
+
+http://localhost:3000/products
+http://localhost:3000/products/1
+http://localhost:3000/products/2
