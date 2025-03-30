@@ -217,3 +217,8 @@ http://localhost:3000/billing                   <-- show no-found.tsx
 http://localhost:3000/products/1/reviews/1001   <-- manually trigger no found page. if no-found.tsx does not exist in products/[productId]/reviews/[reviewId] folder, then it will show the cloese one until it hit into the root folder's not-found.tsx
 http://localhost:3000/dashboard                 <-- you will get 404 if /dashboard/page.tsx not exist, even if other component files in /dashboard folder exists
 http://localhost:3000/_lib                      <-- private folder will not show page.tsx even if it exists. if you actually want an underscore in your URL, use '%5F' insetad. That's just the URL-encoded version of an underscore.
+
+Route Groups:
+http://localhost:3000/register
+http://localhost:3000/login
+http://localhost:3000/forgot-password
