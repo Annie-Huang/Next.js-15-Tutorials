@@ -189,4 +189,7 @@ Ok to proceed? (y) y
 √ What import alias would you like configured? ... @/*
 Creating a new Next.js app in C:\react\Next.js-15-Tutorials\routing-demo.
 
+
 http://localhost:3000/
+http://localhost:3000/about
+http://localhost:3000/profile
