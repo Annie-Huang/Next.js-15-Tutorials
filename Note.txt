@@ -222,3 +222,8 @@ Route Groups:
 http://localhost:3000/register                  <-- All under (auth) route group
 http://localhost:3000/login
 http://localhost:3000/forgot-password
+
+Layout:
+http://localhost:3000
+http://localhost:3000/products
+http://localhost:3000/products/1                <-- a different layout on top of the root layout
