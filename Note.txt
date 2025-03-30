@@ -241,3 +241,7 @@ The only want to achieve this is to not have page.tsx and layout.tsx in the root
       revenue/
       layout.tsx
       page.tsx          <-- http://localhost:3000 will use this and this layout
+
+Routing Metadata
+http://localhost:3000
+http://localhost:3000/about
