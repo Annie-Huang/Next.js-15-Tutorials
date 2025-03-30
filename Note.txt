@@ -219,6 +219,6 @@ http://localhost:3000/dashboard                 <-- you will get 404 if /dashboa
 http://localhost:3000/_lib                      <-- private folder will not show page.tsx even if it exists. if you actually want an underscore in your URL, use '%5F' insetad. That's just the URL-encoded version of an underscore.
 
 Route Groups:
-http://localhost:3000/register
+http://localhost:3000/register                  <-- All under (auth) route group
 http://localhost:3000/login
 http://localhost:3000/forgot-password
