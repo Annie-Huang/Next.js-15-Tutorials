@@ -200,8 +200,15 @@ http://localhost:3000/blog
 http://localhost:3000/blog/first
 http://localhost:3000/blog/second
 
+Dynamic route:
 http://localhost:3000/products
 http://localhost:3000/products/1    <-- with the route of products/[productId], show the params.productId in the template
 http://localhost:3000/products/2
 http://localhost:3000/products/1/reviews/1
 http://localhost:3000/products/100/reviews/5    <-- with the route of products/[productId]/reviews/[reviewId]
+
+Catch all Segments:
+http://localhost:3000/docs                      <-- docs/[[...slug]], if you don't need to use the same file with docs page, you can just use docs/[...slug]
+http://localhost:3000/docs/feature1
+http://localhost:3000/docs/feature1/concept1
+http://localhost:3000/docs/feature1/concept1/example1
