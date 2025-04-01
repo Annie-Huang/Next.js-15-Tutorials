@@ -14,7 +14,10 @@ export default function ProductList() {
         <Link href='products/2'>Product 2</Link>
       </h2>
       <h2>
-        <Link href='products/3'>Product 3</Link>
+        {/* Replace will remove the browser history so you cannot click brower back to go back to the previous page. */}
+        <Link href='products/3' replace>
+          Product 3
+        </Link>
       </h2>
       <h2>
         {/* Dynamic link */}
