@@ -6,6 +6,9 @@ https://github.com/Annie-Huang/Next.js-15-Tutorials
 https://react-slick.neostack.com/docs/get-started
 https://www.npmjs.com/package/react-slick   <--- click PlayGround link
 https://stackblitz.com/edit/vitejs-vite-ownrun?file=src%2FImageSlider.jsx
+
+https://tailwindcss.com/docs/installation/using-postcss
+
 ------------------------------------------------------------------------------
 
 PS C:\react\Next.js-15-Tutorials> npx create-next-app@latest rendering-demo

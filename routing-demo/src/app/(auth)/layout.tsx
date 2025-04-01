@@ -3,6 +3,9 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+// Need to bring global css here to see effect.
+import './styles.css';
+
 const navLinks = [
   { name: 'Register', href: '/register' },
   { name: 'Login', href: '/login' },
