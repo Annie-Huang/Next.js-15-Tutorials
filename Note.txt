@@ -252,3 +252,7 @@ http://localhost:3000/products/1    <-- generate metadata from params info. Got 
                                         Keep in mind you can only use metadata object or generateMetadata inside the same file, cannot use them both together.
 http://localhost:3000/counter       <-- metadata object cannot use in client component, only on server component.
 http://localhost:3000/blog          <-- how to use the template defined in the root level: to follow the template or break free from template.
+
+http://localhost:3000/articles/breaking-news-123?lang=en
+http://localhost:3000/articles/id?lang=es
+http://localhost:3000/articles/breaking-news-123?lang=fr
