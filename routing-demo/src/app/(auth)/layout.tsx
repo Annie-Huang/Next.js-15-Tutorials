@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 
 // Need to bring global css here to see effect.
 import './styles.css';
+import { useState } from 'react';
 
 const navLinks = [
   { name: 'Register', href: '/register' },
@@ -17,12 +18,18 @@ export default function AuthLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [input, setInput] = useState('');
+
   // The usePathname can only be with a client component.
   const pathname = usePathname();
   console.log('pathname=', pathname);
 
   return (
     <div>
+      {/* Use template file rather than layout file if you want to have fresh start for each navigation routes */}
+      <div style={{ border: '1px solid red', width: 'max-content' }}>
+        <input value={input} onChange={(e) => setInput(e.target.value)} />
+      </div>
       {navLinks.map((link) => {
         const isActive =
           pathname === link.href ||
