@@ -253,6 +253,8 @@ http://localhost:3000/products/1    <-- generate metadata from params info. Got 
 http://localhost:3000/counter       <-- metadata object cannot use in client component, only on server component.
 http://localhost:3000/blog          <-- how to use the template defined in the root level: to follow the template or break free from template.
 
+
+params and searchParams:
 http://localhost:3000/articles/breaking-news-123?lang=en
 http://localhost:3000/articles/breaking-news-123?lang=es
 http://localhost:3000/articles/breaking-news-123?lang=fr
@@ -268,3 +270,6 @@ http://localhost:3000/articles/breaking-news-123?lang=fr
                 const { articleId } = use(params);
                 const { lang = 'en' } = use(searchParams);
             })
+
+Navigating Programmatically:
+http://localhost:3000/order-product
