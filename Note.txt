@@ -256,3 +256,15 @@ http://localhost:3000/blog          <-- how to use the template defined in the r
 http://localhost:3000/articles/breaking-news-123?lang=en
 http://localhost:3000/articles/breaking-news-123?lang=es
 http://localhost:3000/articles/breaking-news-123?lang=fr
+
+        server component:
+            const NewsArticle = async (xxx) => {
+              const { articleId } = await params;
+              const { lang = 'en' } = await searchParams;
+            })
+        client component:
+            'use client';
+            const NewsArticle = (xxx) => {
+                const { articleId } = use(params);
+                const { lang = 'en' } = use(searchParams);
+            })

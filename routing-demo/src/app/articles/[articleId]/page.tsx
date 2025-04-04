@@ -1,16 +1,25 @@
-import React from 'react';
+'use client';
+import React, { use } from 'react';
 import Link from 'next/link';
 
-const NewsArticle = async ({
+// Client component does not support async await.
+// const NewsArticle = async ({
+const NewsArticle = ({
   params,
   searchParams,
 }: {
   params: Promise<{ articleId: string }>;
   searchParams: Promise<{ lang?: 'en' | 'es' | 'fr' }>;
 }) => {
+  /*
+  // Server component:
   const { articleId } = await params;
   // get the searchParam of lang, if it is not coming in, default it as 'en'
   const { lang = 'en' } = await searchParams;
+  */
+
+  const { articleId } = use(params);
+  const { lang = 'en' } = use(searchParams);
 
   return (
     <div>
