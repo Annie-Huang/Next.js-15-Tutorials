@@ -26,7 +26,9 @@ export default function AuthLayout({
 
   return (
     <div>
-      {/* Use template file rather than layout file if you want to have fresh start for each navigation routes */}
+      {/* Use template.tsx rather than layout.tsx if you want to have fresh set of layout file content for each navigation routes
+          Enter something in input field and you can see it is gone when you navigate between register|login|forgot password, even though it's in the template file.
+      */}
       <div style={{ border: '1px solid red', width: 'max-content' }}>
         <input value={input} onChange={(e) => setInput(e.target.value)} />
       </div>
