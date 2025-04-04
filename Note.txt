@@ -199,7 +199,7 @@ http://localhost:3000/profile
 http://localhost:3000/dashboard     <-- route page not exists will default show 404
 
 Nested route:
-http://localhost:3000/blog
+http://localhost:3000/blog          <-- has delay out see the loading page.
 http://localhost:3000/blog/first
 http://localhost:3000/blog/second
 
@@ -238,7 +238,7 @@ The only want to achieve this is to not have page.tsx and layout.tsx in the root
       login/
       register/
         page.tsx                    <-- http://localhost:3000/register will use the layout under (auth). Keep in mind that you cannot have page.tsx just under (auth). otherwise nextjs will confuse which root page to use for http://localhost:3000
-      layout.tsx|template.tsx       <-- can only have layout.tsx, not page.tsx just underneath (auth). Change to template.tsx later on because we want refresh set of component on navigation.
+      layout.tsx|template.tsx       <-- can only have layout.tsx, not page.tsx just underneath (auth). Change to template.tsx later on because we want refresh set of component on navigation. You can have a template.tsx inside a layout.tsx as well if you want.
     (marketing)/
       customers/
       revenue/
