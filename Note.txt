@@ -254,5 +254,5 @@ http://localhost:3000/counter       <-- metadata object cannot use in client com
 http://localhost:3000/blog          <-- how to use the template defined in the root level: to follow the template or break free from template.
 
 http://localhost:3000/articles/breaking-news-123?lang=en
-http://localhost:3000/articles/id?lang=es
+http://localhost:3000/articles/breaking-news-123?lang=es
 http://localhost:3000/articles/breaking-news-123?lang=fr
