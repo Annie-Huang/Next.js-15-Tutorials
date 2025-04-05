@@ -277,3 +277,16 @@ http://localhost:3000/products/1/reviews/1001       <-- redirect('/products')   
 
 http://localhost:3000/blog                          <-- loading page.
 http://localhost:3000/products/1/reviews/1001       <-- Error page.
+
+Component hierarchy
+    <Layout>                                                    <-- layout.tsx
+        <Template>                                              <-- template.tsx
+            <ErrorBoundary fallback={<Error />}>                <-- error.tsx
+                <Suspense fallback={<Loading />}>               <-- loading.tsx
+                    <ErrorBoundary fallback={<NotFound />}>     <-- no-found.tsx
+                        <Page />                                <-- page.tsx
+                    </ErrorBoundary>
+                </Suspense>
+            </ErrorBoundary>
+        </Template>
+    </Layout>
