@@ -14,7 +14,7 @@ export default function ProductList() {
         <Link href='products/2'>Product 2</Link>
       </h2>
       <h2>
-        {/* Replace will remove the browser history so you cannot click brower back to go back to the previous page. */}
+        {/* Replace will remove the browser history so you cannot click browser back to go back to the previous page. */}
         <Link href='products/3' replace>
           Product 3
         </Link>
