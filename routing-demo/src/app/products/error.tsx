@@ -4,6 +4,8 @@
 import { useRouter } from 'next/navigation';
 import { startTransition } from 'react';
 
+// !!!! Move the error.tsx from /products/[productId], into /products/ level, so it can catch error listed in the /products/[productId]/layout.tsx file. Otherwise it will how throw error because it's outside of the error boundary.
+
 export default function ErrorBoundary({
   error,
   reset,
