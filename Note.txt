@@ -295,4 +295,8 @@ Component hierarchy
 !!!! Move the error.tsx from /products/[productId], into /products/ level, so it can catch error listed in the /products/[productId]/layout.tsx file. Otherwise it will how throw error because it's outside of the error boundary.
 All error catch up in layout component need to be done in the parent's error.tsx file. Except for the root layout file, which will be catched in the global-error.tsx file.
 
-
+global-errors only shows in production mode:
+// This file only work in production mode, in order to see it, do:
+// npm run build
+// npm run start
+// http://localhost:3000/
