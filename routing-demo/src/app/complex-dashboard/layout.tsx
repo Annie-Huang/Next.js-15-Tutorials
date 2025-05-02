@@ -1,6 +1,6 @@
-import UserAnalytics from 'path/to/UserAnalytics';
-import RevenueMetrics from 'path/to/RevenueMetrics';
-import Notifications from 'path/to/Notifications';
+// import UserAnalytics from 'path/to/UserAnalytics';
+// import RevenueMetrics from 'path/to/RevenueMetrics';
+// import Notifications from 'path/to/Notifications';
 import React from 'react';
 
 export default function ComplexDashboardLayout({
