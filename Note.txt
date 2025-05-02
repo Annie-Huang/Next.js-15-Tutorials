@@ -300,3 +300,6 @@ global-errors only shows in production mode:
 // npm run build
 // npm run start
 // http://localhost:3000/
+
+parallel routes:
+http://localhost:3000/complex-dashboard
