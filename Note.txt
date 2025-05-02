@@ -305,3 +305,4 @@ parallel routes:
 http://localhost:3000/complex-dashboard
 http://localhost:3000/complex-dashboard/users   <-- not existed, slot is not equal to route.
 http://localhost:3000/complex-dashboard/@users  <-- not existed, slot is not equal to route.
+http://localhost:3000/complex-dashboard/archived
