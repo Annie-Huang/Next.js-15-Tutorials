@@ -306,3 +306,5 @@ http://localhost:3000/complex-dashboard
 http://localhost:3000/complex-dashboard/users   <-- not existed, slot is not equal to route.
 http://localhost:3000/complex-dashboard/@users  <-- not existed, slot is not equal to route.
 http://localhost:3000/complex-dashboard/archived
+    <-- If you navigate to /archieved from link in @notification, you can see the page.
+        But if you just type http://localhost:3000/complex-dashboard/archived and refresh the page without having the default.tsx page in the root, you will get error
