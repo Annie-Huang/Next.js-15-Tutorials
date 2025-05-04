@@ -25,7 +25,7 @@ export default function ComplexDashboardLayout({
   //   </>
   // );
 
-  const isLoggedIn = false;
+  const isLoggedIn = true;
   return isLoggedIn ? (
     <div>
       <div>{children}</div>
