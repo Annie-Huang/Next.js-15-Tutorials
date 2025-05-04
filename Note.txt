@@ -308,3 +308,6 @@ http://localhost:3000/complex-dashboard/@users  <-- not existed, slot is not equ
 http://localhost:3000/complex-dashboard/archived
     <-- If you navigate to /archieved from link in @notification, you can see the page.
         But if you just type http://localhost:3000/complex-dashboard/archived and refresh the page without having the 3 default.tsx page (root, @revenue, @users) in the root, you will get error
+
+intercepting routes:
+http://localhost:3000/f1
