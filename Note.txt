@@ -311,3 +311,4 @@ http://localhost:3000/complex-dashboard/archived
 
 intercepting routes:
 http://localhost:3000/f1
+http://localhost:3000/f1/f2
