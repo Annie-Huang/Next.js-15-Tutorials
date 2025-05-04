@@ -316,3 +316,5 @@ http://localhost:3000/f3
 intercepting route structure:
     f1/f2
     f1/(.)f2    <-- will show intercepting the component of f2 if it is access through the link in f1. But if you just refresh the page or typing the url of f1/f2, it will go the normal f2 component.
+    f3
+    f1/(..)f3   <-- same as above but travel up parents first before going to f3
